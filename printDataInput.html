@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function printInput() {
+		  	var x = document.getElementById("input").value;
+		  	console.log(x);
+		  	alert("You wrote");
+	  		document.getElementById("result").innerHTML = "Result is: " + x;
+		}
+	</script>
+</head>
+<body>
+	<input id="input" type="text" name="Input">
+	<button onclick="printInput()">Print</button>
+	<div><p id="result"></p></div>	
+</body>
+</html>

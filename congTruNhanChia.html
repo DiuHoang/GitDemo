@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.main{
+			width: 400px;
+			margin: auto;
+		}
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript">
+		function tong(){
+			var a = document.getElementById("input1").value;
+			var b = document.getElementById("input2").value;
+			var tong = parseInt(a) + parseInt(b);
+			console.log(tong);
+			document.getElementById("result").innerHTML = " Tong cua 2 so la: " + tong;
+		}
+		function hieu(){
+			var a = document.getElementById("input1").value;
+			var b = document.getElementById("input2").value;
+			var hieu = parseInt(a) - parseInt(b);
+			document.getElementById("result") = " Hieu cua 2 so la: " + hieu;
+		}
+		function tich(){
+			var a = document.getElementById("input1").value;
+			var b = document.getElementById("input2").value;
+			var tich = parseInt(a) * parseInt(b);
+			document.getElementById("result") = " Tich cua 2 so la: " + tich;
+		}
+		function thuong(){
+			var a = document.getElementById("input1").value;
+			var b = document.getElementById("input2").value;
+			var thuong = parseInt(a) / parseInt(b);
+			document.getElementById("result") = " Thuong cua 2 so la: " + thuong;
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<label>Input Number 1</label>
+		<input id="input1" type="text" name="" class="form-control" > 
+		<label>Input Number 2</label>
+		<input id="input2" type="text" name="" class="form-control" > 
+		<br> 
+		<div>
+			<button onclick="tong()" type="button" class="btn btn-primary">Tổng</button>
+			<button onclick="hieu()" type="button" class="btn btn-warning">Hiệu</button>
+			<button onclick="tich()" type="button" class="btn btn-success">Tích</button>
+			<button onclick="thuong()" type="button" class="btn btn-info">Thương</button>
+		</div>
+		<br>
+		<div><p id="result">Result</p></div>
+	</div>
+</body>
+</html>

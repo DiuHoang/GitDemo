@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caculator</title>
+	<style type="text/css">
+		.main{
+			width: 400px;
+			margin: auto;
+		}
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript">
+		function total(){
+			var a = document.getElementById("input1").value;
+			var b = document.getElementById("input2").value;
+			var sum = parseInt(a) + parseInt(b);
+			console.log(sum);
+			document.getElementById("result").innerHTML = "Sum is: " + sum;
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<label>Input Number 1</label>
+		<input id="input1" type="text" name="" class="form-control"> 
+		<label>Input Number 2</label>
+		<input id="input2" type="text" name="" class="form-control"> 
+		<button onclick="total()" type="button" class="btn btn-success">Sum</button>
+		<div><p id="result">Result</p></div>
+	</div>
+</body>
+</html>
